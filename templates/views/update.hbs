@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modify Reminder</title>
+</head>
+<body>
+  <h1>Modify Reminder</h1>
+  
+  <form action="/update" method="POST">
+    
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date">
+    <br>
+    
+    <label for="subject">Select Subject:</label>
+    <select id="subject" name="subject">
+      <option value="maths">Maths</option>
+      <option value="science">Science</option>
+    <option value="history">History</option>
+    </select>
+    <br>
+    
+    
+    
+    </select>
+    <br>
+    
+    <label for="description">Add Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+    <br>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    
+    <label for="contactNo">Contact No:</label>
+    <input type="text" id="contactno" name="contactNo">
+    <br>
+    
+    <label for="smsNo">SMS No:</label>
+    <input type="text" id="smsno" name="smsNo">
+    <br>
+    
+    <label>Recur for next:</label>
+    <input type="checkbox" id="recur7Days" name="recur" value="7"> <label for="recur7Days">7 Days</label>
+    <input type="checkbox" id="recur5Days" name="recur" value="5"> <label for="recur5Days">5 Days</label>
+    <input type="checkbox" id="recur3Days" name="recur" value="3"> <label for="recur3Days">3 Days</label>
+    <input type="checkbox" id="recur2Days" name="recur" value="2"> <label for="recur2Days">2 Days</label>
+    <br>
+    
+    <input type="submit" value="Modify Reminder">
+  </form>
+  
+  <a href="/logout">Log out</a>
+</body>
+</html>

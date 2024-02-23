@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+.form-group textarea[readonly] {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+    </style>
+    <title>Delete Reminder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Reminder</h1>
+        <form action="/delete" method="POST">
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+                <span class="icon"><img src="calendar-icon.png" alt="Calendar Icon"></span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Select Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+           
+            
+            <button type="submit">Delete Reminder</button>
+        </form>
+        <a href="/logout" class="logout">Log out</a>
+    </div>
+</body>
+</html>

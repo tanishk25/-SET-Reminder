@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          body{
+               background-color:#ddd;
+               
+          }
+          .top{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               text-transform: uppercase;
+               color: #222;
+               letter-spacing: 1.4px;
+               font-size: 22px;
+               font-family: sans-serif;
+               padding: 50px 0px;
+          }
+          .container .top h1::after{
+               height: 7px;
+               width: 180px;
+               content: "";
+               position: relative;
+               display: block;
+               margin: auto;
+               border-radius: 7px;
+               background-color: #222;
+          }
+       
+          .content{
+               width: 65%;
+               margin-left: 265px;
+               margin-top: 8px;
+               padding: 75px;
+               font-family:sans-serif;
+               font-size: 18px;
+               border: 2px solid rosybrown;
+               box-shadow:0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+               border-radius: 8px;
+               background-color:turquoise;
+
+          }
+          ul{
+               margin:6px 18px;
+          }
+          li{
+               margin-top: 2px;
+          }
+          .text{
+               margin-bottom: 5px;
+          }
+          .mem{
+               margin-top: 100px;
+               color: #222;
+               line-height: 1.5;
+          }
+              
+     </style>
+</head>
+<body>
+     {{>navbar}}
+     <div class="container">
+          <div class="top">
+               <h1>About Us</h1>
+          </div> 
+          <div class="content">
+               <p class="text">This is a complete student registration form where students can register using their basic details.</p>
+               <b>Technology Used-</b>
+               <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>NodeJs</li>
+                    <li>MongoDB</li>
+               </ul>
+               <div class="mem"><b> Team Members :-</b>
+                    <ul type=>
+                         <li>Srijan Sharma</li>
+                         <li>Sunny Gautam</li>
+                         <li>Varun Sinha</li>
+                         <li>Tanishk Jaiswal</li>
+                    </ul>
+               </div>               
+          </div>
+     </div>    
+</body>
+</html>

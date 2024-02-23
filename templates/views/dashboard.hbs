@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.username {
+    color: #007bff;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.action-btn.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+.logout {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+    </style>
+    <title>Reminder Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Reminder Application <span class="username">ACXIOM CONCULTING</span></h1>
+        <p>18th Of August.</p>
+        <div class="actions">
+            <a href="/setreminders" class="action-btn">Set Reminder</a>
+            <a href="/update" class="action-btn">Modify Reminder</a>
+            <a href="/delete" class="action-btn">Delete Reminder</a>
+            <a href="/viewreminder" class="action-btn">View Reminder</a>
+            <a href="/logout" class="logout">Log out</a>
+        </div>
+    </div>
+</body>
+</html>
